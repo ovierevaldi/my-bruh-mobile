@@ -1,4 +1,15 @@
-import { StyleSheet, Text, View } from "react-native";
+import { Button } from "@/components/ui/button";
+import { Text } from "@/components/ui/text";
+import { StyleSheet, View } from "react-native";
+
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 export default function Index() {
   return (
@@ -6,6 +17,23 @@ export default function Index() {
       <Text className="text-xl font-bold text-blue-500">
         Welcome to Nativewind!
       </Text>
+
+      <Button>
+        <Text>Button</Text>
+      </Button>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Card Title</CardTitle>
+          <CardDescription>Card Description</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <Text>Card Content</Text>
+        </CardContent>
+        <CardFooter>
+          <Text>Card Footer</Text>
+        </CardFooter>
+      </Card>
     </View>
   );
 }
