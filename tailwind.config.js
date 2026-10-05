@@ -10,6 +10,10 @@ module.exports = {
   presets: [require("nativewind/preset")],
   theme: {
     extend: {
+      fontFamily: {
+        raleway: ["Raleway_400Regular"],
+        nunito_sans: ["NunitoSans_400Regular"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
