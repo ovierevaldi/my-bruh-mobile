@@ -32,58 +32,8 @@ export default function RootLayout() {
 
   return (
     <>
-      <Stack
-        screenOptions={{
-          headerStyle: {
-            backgroundColor: "#00776e",
-          },
-          headerTintColor: "#f0fdfa",
-          headerTitleStyle: {
-            fontWeight: "bold",
-          },
-        }}
-      >
-        <Stack.Screen
-          name="index"
-          options={{
-            title: "Home",
-          }}
-        />
-
-        <Stack.Screen
-          name="auth/index"
-          options={{
-            title: "Auth",
-          }}
-        />
-
-        <Stack.Screen
-          name="analytics/index"
-          options={{
-            title: "Analytics",
-          }}
-        />
-
-        <Stack.Screen
-          name="backup/index"
-          options={{
-            title: "Backup",
-          }}
-        />
-
-        <Stack.Screen
-          name="income/index"
-          options={{
-            title: "Income",
-          }}
-        />
-
-        <Stack.Screen
-          name="settings/index"
-          options={{
-            title: "Settings",
-          }}
-        />
+      <Stack>
+        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
       </Stack>
 
       <PortalHost />
